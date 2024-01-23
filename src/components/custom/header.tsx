@@ -113,8 +113,8 @@ export default function HeaderComponent() {
                     {cart.items.length}
                   </div>
                 </PopoverTrigger>
-                <PopoverContent className='max-w-md w-full'>
-                  <div className='rounded-lg'>
+                <PopoverContent className=' w-full'>
+                  <div className='rounded-lg max-w-md'>
                     <h2 className='font-bold text-primary pb-2'>Your Cart</h2>
                     <div className='flex flex-col'>
                       {cart.items.map((item, index) => (
@@ -128,7 +128,7 @@ export default function HeaderComponent() {
                           />
                           <div className=''>
                             <p className='text-sm font-bold'>{item.title}</p>
-                            <div className='flex items-center justify-between mt-1'>
+                            <div className='flex items-center gap-5 justify-between mt-1'>
                               <p className='text-sm'>Qty: {item.quantity}</p>
                               <p className='font-bold text-sm text-secondary'>
                                 Price: ${item.price}
