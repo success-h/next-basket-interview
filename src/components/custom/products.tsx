@@ -23,6 +23,10 @@ export function Products() {
     queryFn: getProducts,
   });
 
+  useEffect(() => {
+    refetch();
+  }, [limitNumber]);
+
   return (
     <div className='py-20 relative px-10 mt-20 text-center max-w-[1400px] w-full mx-auto'>
       <h4 className='text-lg font-light'>Featured Products</h4>
@@ -35,10 +39,9 @@ export function Products() {
       <Button
         variant={"outline"}
         onClick={() => {
-          refetch();
           setLimitNumber((limitNumber) => limitNumber + 5);
         }}
-        className='uppercase px-10 text-blue-400 border-blue-400'
+        className='uppercase bounce px-10 text-blue-400 border-blue-400'
       >
         {isPending ? "Loading..." : "Load more products"}
       </Button>
