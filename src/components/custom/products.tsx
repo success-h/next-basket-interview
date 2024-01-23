@@ -41,7 +41,7 @@ export function Products() {
         onClick={() => {
           setLimitNumber((limitNumber) => limitNumber + 5);
         }}
-        className='uppercase bounce px-10 text-blue-400 border-blue-400'
+        className='uppercase bounce px-10 text-blue-400 border-gray-100'
       >
         {isPending ? "Loading..." : "Load more products"}
       </Button>
