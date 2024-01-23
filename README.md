@@ -2,12 +2,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Bandage Ecommerce is a test project I built following the guide for Nextbasket Senior frontend interview. I utilized, nextjs, redux redux-toolkit, typescript, react-query for this project. My reason for using ShadcnUI over Material UI is that I got to see the interview assignment 3 days after it's been sent, and I had to use component library that has full support for tailwindcss so I can take control over styling this project in the smallest time possible.
+Bandage Ecommerce is a test project I built following the guide for Nextbasket Senior frontend interview. I utilized some powerfull cutting edge technologies for this project. My reason for using ShadcnUI over Material UI is that I got to see the interview assignment 3 days after it's been sent, and I had to use a component library that has full support for tailwindcss so I can take control over styling this project in the smallest time possible.
 
 - I used React Query to get data.
 - I used Redux Toolkit to create a cart and wishlist state, manage it, and created basic cart operations.
 - I used Redux Persisit to store the cart in local storage so when the user refreshes, they still have their wishlist and cart intact.
 - I used Typescript to ensure my code is type safe.
+- I used Tailwindcss for styling
+- I Utilized ShadcnUI, a highly customizable Nextjs/React component library optimized for tailwindcss. 
 
 First, run the development server:
 
