@@ -77,7 +77,7 @@ export function ProductDetailComponent({ data }: Props) {
           </Carousel>
           <div className='flex items-center flex-wrap gap-4 mt-5'>
             {data?.images.map((item: any, index: number) => (
-              <div className='h-[75px] w-[100px]'>
+              <div key={index} className='h-[75px] w-[100px]'>
                 <Image
                   alt='image'
                   src={item}

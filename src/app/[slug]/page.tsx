@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import { ProductDetailComponent } from "@/components/custom/product-detail";
 import { ProductReview } from "@/components/custom/product-review";
 import { BestSellerProduct } from "@/components/custom/best-seller-products";
+import { Spots } from "@/components/custom/spots";
 
 export default function ProductDetail() {
   const params: any = useParams() ?? "";
@@ -20,7 +21,7 @@ export default function ProductDetail() {
     }
   };
 
-  const { isPending, data, refetch, error } = useQuery({
+  const { data } = useQuery({
     queryKey: ["getProduct"],
     queryFn: getProduct,
   });
@@ -30,6 +31,7 @@ export default function ProductDetail() {
       <ProductDetailComponent data={data} />
       <ProductReview />
       <BestSellerProduct />
+      <Spots />
     </section>
   );
 }
